@@ -1,0 +1,28 @@
+{
+  "name": "cocos-legacy-build",
+  "title": "旧版构建发布（含进度条）",
+  "package_version": 2,
+  "version": "1.1.0",
+  "editor": ">=3.0.0",
+  "author": "wudx",
+  "description": "在“项目”菜单中增加“打开旧版构建发布”，打开编辑器内置的 builder.old 面板，并把构建进度直接画在面板的任务卡片里。",
+  "main": "./main.js",
+  "engines": {
+    "creator": ">=3.8.0"
+  },
+  "contributions": {
+    "messages": {
+      "open-legacy-builder": {
+        "methods": ["openLegacyBuilder"]
+      }
+    },
+    "menu": [
+      {
+        "path": "i18n:menu.project",
+        "label": "打开旧版构建发布",
+        "message": "open-legacy-builder",
+        "group": "build"
+      }
+    ]
+  }
+}
